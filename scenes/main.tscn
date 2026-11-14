@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://bsclxq4y8bfbc"]
+
+[ext_resource type="PackedScene" uid="uid://b1b1ajvfpiu16" path="res://scenes/drone.tscn" id="1_o5qli"]
+
+[node name="main" type="Node2D" unique_id=1593671086]
+
+[node name="Drone" parent="." unique_id=652969609 instance=ExtResource("1_o5qli")]
+position = Vector2(320, 180)

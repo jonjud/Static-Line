@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://b1b1ajvfpiu16"]
+
+[ext_resource type="Script" uid="uid://cmh5abuo4ss35" path="res://scripts/drone.gd" id="1_dil0n"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_htemk"]
+size = Vector2(32, 32)
+
+[node name="Drone" type="CharacterBody2D" unique_id=652969609]
+script = ExtResource("1_dil0n")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1129740358]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -16.0
+offset_top = -16.0
+offset_right = 16.0
+offset_bottom = 16.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.39215687, 0.58431375, 0.92941177, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=873843291]
+shape = SubResource("RectangleShape2D_htemk")
